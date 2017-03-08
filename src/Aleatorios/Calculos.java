@@ -3,6 +3,7 @@ public class Calculos {
 	int x0=37, x, i, n=1024, a=7, b=3, c=8;
 	double val, dx, xx=0, sum=0;
 	double arr[]= new double[n];
+	double med[] = new double[1];
 	
 	double var(double arr[], double miu, int n){
 		int i;
@@ -57,10 +58,19 @@ public class Calculos {
 			arr[i]=val;
 			sum+=val;
 		}
+		med[0]=sum;
 		Chi(arr,n);
 		System.out.println("med: "+sum/1024.0+"\t var:"+var(arr,sum/1024.0,n));
 		return 0;
 	}
 	
+	public double[] Randoms(){
+		return arr;
+	}
+	
+	public double media(){
+		double media = med[0]/1024;
+		return media;
+	}
 
 }
