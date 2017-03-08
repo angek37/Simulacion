@@ -1,7 +1,6 @@
 package CorridasMed;
 
 import Aleatorios.*;
-import javax.swing.*;
 
 public class Capturador {
 	public static void main(String mr[]){
