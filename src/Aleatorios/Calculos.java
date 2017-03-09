@@ -1,6 +1,6 @@
 package Aleatorios;
 public class Calculos {
-	int x0=37, x, i, n=1024, a=7, b=3, c=8;
+	int x0=37, x, i, n=1024, a=8, b=3, c=7;
 	double val, dx, xx=0, sum=0;
 	double arr[]= new double[n];
 	double med[] = new double[1];
