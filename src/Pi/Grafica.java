@@ -13,9 +13,9 @@ import Aleatorios.Engine;
 
 
 public class Grafica extends JFrame {
-	int l = 4096;
+	int l = 8000;
 	Engine e = new Engine(l);
-	MonteCarlo m = new MonteCarlo(e.getNums());
+	MonteCarlo m = new MonteCarlo(e.randoms());
 	double p[][] = m.getArr();
 	
 	
@@ -47,6 +47,11 @@ public class Grafica extends JFrame {
     
     public void paint (Graphics g){
     	super.paint(g);
+    	g.setColor(Color.GREEN);
+    	for(double x = 0; x < (Math.PI/2);){ 
+    		g.drawOval((int)(Math.cos(x)*350)+20, (int)(Math.sin(x)*350)+40, 2, 2);
+    		x+=0.01;
+    	}
     	g.setColor (Color.blue);
         g.drawRect (20, 40, 350, 350);
         g.drawOval (20, 40, 350, 350);
