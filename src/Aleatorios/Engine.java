@@ -3,9 +3,11 @@ package Aleatorios;
 public class Engine {
 	double arr[];
 	double med[] = new double[1];
+	int c;	//cuantos numeros generar para la clase random
 	
 	public Engine(int n){
 		super();
+		c=n;
 		int x0=37, x=0, a=8, b=3, c=7;
 		double val=0, sum=0;
 		Calc(n, x0, a, b, c, val, x, sum);
@@ -59,6 +61,13 @@ public class Engine {
 	}
 	
 	public double[] getNums(){
+		return arr;
+	}
+	
+	public double[] randoms(){
+		for(int x = 0; x<c; x++){
+			arr[x]=Math.random();
+		}
 		return arr;
 	}
 }
