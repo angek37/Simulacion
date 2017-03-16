@@ -13,7 +13,7 @@ import Aleatorios.Engine;
 
 
 public class Grafica extends JFrame {
-	int l = 8000;
+	int l = 1024;
 	Engine e = new Engine(l);
 	MonteCarlo m = new MonteCarlo(e.randoms());
 	double p[][] = m.getArr();

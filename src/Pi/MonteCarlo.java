@@ -22,12 +22,13 @@ public class MonteCarlo {
 		}
 		for(int x = 0; x < (r.length/2); x++){
 			aux = Math.pow(tabla[0][x], 2) + Math.pow(tabla[1][x], 2);
+			System.out.println(aux);	// Imprime el resultado de la operación x^2+y^2
 			if(aux <= 1){
 				n++;
 			}
 		}
-		pi = (double)(4*n)/(double)(r.length/2);
-		Print(tabla, r.length);
+		pi = (4*n)/(double)(r.length/2);
+		//Print(tabla, r.length);		//Imprime la tabla con los valores de x y
 		System.out.println("Cantidad de números: "+(r.length/2)+
 				"\nCantidad de números dentro del circulo: "+n+
 					"\nAproximación de pi: "+pi);
