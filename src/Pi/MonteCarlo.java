@@ -11,7 +11,7 @@ public class MonteCarlo {
 		System.out.println("imprimeme l "+l);
 		double tabla[][] = new double[2][l/2];
 		Metodo(r, tabla);
-		Print(tabla, l, Nci, pi);
+		//Print(tabla, l, Nci, pi);
 		CalculoPi(tabla, l,Nci,pi);
 	}
 	
