@@ -22,7 +22,7 @@ public class MonteCarlo {
 		}
 		for(int x = 0; x < (r.length/2); x++){
 			aux = Math.pow(tabla[0][x], 2) + Math.pow(tabla[1][x], 2);
-			System.out.println(aux);	// Imprime el resultado de la operación x^2+y^2
+			//System.out.println(aux);	// Imprime el resultado de la operación x^2+y^2
 			if(aux <= 1){
 				n++;
 			}
